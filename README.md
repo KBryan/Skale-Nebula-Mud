@@ -19,3 +19,41 @@ import  {skaleNebula} from "viem/chains";
  */
 export const supportedChains: MUDChain[] = [mudFoundry, redstone, garnet, skaleNebula];
 ```
+
+You will also need to edit the foundy.toml file when editing the chain you wish to connect with any supplying the correct `eth_rpc_url`
+
+```rust
+[profile.default]
+solc = "0.8.24"
+ffi = false
+fuzz_runs = 256
+optimizer = true
+optimizer_runs = 3000
+verbosity = 2
+src = "src"
+test = "test"
+out = "out"
+allow_paths = [
+  # pnpm symlinks to the project root's node_modules
+  "../../node_modules",
+  # template uses linked mud packages from within the mud monorepo
+  "../../../../packages",
+  # projects created from this template and using linked mud packages
+  "../../../mud/packages",
+]
+extra_output_files = [
+  "abi",
+  "evm.bytecode"
+]
+fs_permissions = [{ access = "read", path = "./"}]
+
+[profile.garnet]
+eth_rpc_url = "https://rpc.garnetchain.com"
+
+[profile.skaleNebula]
+eth_rpc_url = "https://mainnet.skalenodes.com/v1/green-giddy-denebola"
+
+[profile.redstone]
+eth_rpc_url = "https://rpc.redstonechain.com"
+
+```
