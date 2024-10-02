@@ -90,9 +90,9 @@ Now, from within the main MUD project directory. Run the following command.
 pnpm dev
 ```
 
-Lastly, you can visit the following URL in your browser
+Lastly, you can visit the following URL in your browser. NOTE change the chainId to the network you wish to connect. 
 
 ```
-pnpm mud deploy --profile skaleNebula --forgeScriptOptions="--legacy"
+http://localhost:3000/?chainid=37084624
 
 ```
