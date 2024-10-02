@@ -1,9 +1,9 @@
 # Skale-Nebula-Mud
 Tutorial example for Nebula developers wishing to integrate Skale/Nebula and MUD
 
-Update the packages/client .env.example to the Skale ChainID for either mainnet or testnet you wish to run the client 
+Update the `packages/client .env.example` to the Skale ChainID for either mainnet or testnet you wish to run the client 
 
-Update the packages/contracts to .env.example with the account's private key with deployer roles. Although ensure that this account is funded with sFuel
+Update the `packages/contracts to .env.example` with the account's private key with deployer roles. Although ensure that this account is funded with sFuel
 
 
 Edit supportedChains.ts within the packages/client to the Skale/Nebula network you wish to connect your frontend.
