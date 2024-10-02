@@ -4,7 +4,7 @@ Tutorial example for Nebula developers wishing to integrate Skale/Nebula and MUD
 Update the `packages/client .env.example` to the Skale ChainID for either `mainnet` or `testnet` you wish to run the client 
 
 ```javascript
-VITE_CHAIN_ID=1482601649
+VITE_CHAIN_ID=37084624
 ```
 
 Update the `packages/contracts to .env.example` with the account's private key with deployer roles. Although ensure that this account is funded with `sFuel`
