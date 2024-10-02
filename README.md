@@ -1,9 +1,28 @@
 # Skale-Nebula-Mud
 Tutorial example for Nebula developers wishing to integrate Skale/Nebula and MUD
 
-Update the `packages/client .env.example` to the Skale ChainID for either mainnet or testnet you wish to run the client 
+Update the `packages/client .env.example` to the Skale ChainID for either `mainnet` or `testnet` you wish to run the client 
 
-Update the `packages/contracts to .env.example` with the account's private key with deployer roles. Although ensure that this account is funded with sFuel
+```
+VITE_CHAIN_ID=1482601649
+```
+
+Update the `packages/contracts to .env.example` with the account's private key with deployer roles. Although ensure that this account is funded with `sFuel`
+
+To get sFuel follow the link and fund your account https://www.sfuelstation.com/ 
+```
+# This .env file is for demonstration purposes only.
+#
+# This should usually be excluded via .gitignore and the env vars attached to
+# your deployment environment, but we're including this here for ease of local
+# development. Please do not commit changes to this file!
+#
+# Enable debug logs for MUD CLI
+DEBUG=mud:*
+#
+# Anvil default private key:
+export PRIVATE_KEY="Add Private Key with Deployer Role"
+```
 
 
 Edit supportedChains.ts within the packages/client to the Skale/Nebula network you wish to connect your frontend.
