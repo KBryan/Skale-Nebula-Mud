@@ -76,3 +76,23 @@ eth_rpc_url = "https://mainnet.skalenodes.com/v1/green-giddy-denebola"
 eth_rpc_url = "https://rpc.redstonechain.com"
 
 ```
+
+# Compiling the smart contracts
+Deploying smart contracts on the Skale network you must use the following command within the CLI within the contracts folder
+
+```
+ pnpm mud deploy --profile skaleNebula --forgeScriptOptions="--legacy"
+```
+
+Now, from within the main MUD project directory. Run the following command.
+
+```
+pnpm dev
+```
+
+Lastly, you can visit the following URL in your browser
+
+```
+pnpm mud deploy --profile skaleNebula --forgeScriptOptions="--legacy"
+
+```
