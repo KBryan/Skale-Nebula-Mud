@@ -1,0 +1,31 @@
+{
+  "systems": [
+    {
+      "namespaceLabel": "app",
+      "label": "IncrementSystem",
+      "namespace": "app",
+      "name": "IncrementSystem",
+      "systemId": "0x73796170700000000000000000000000496e6372656d656e7453797374656d00",
+      "abi": [
+        "function increment() returns (uint32)"
+      ],
+      "worldAbi": [
+        "function app__increment() returns (uint32)"
+      ]
+    },
+    {
+      "namespaceLabel": "app",
+      "label": "MintSystem",
+      "namespace": "app",
+      "name": "MintSystem",
+      "systemId": "0x737961707000000000000000000000004d696e7453797374656d000000000000",
+      "abi": [
+        "function mint(uint32 item)"
+      ],
+      "worldAbi": [
+        "function app__mint(uint32 item)"
+      ]
+    }
+  ],
+  "createdAt": 1727811242411
+}
