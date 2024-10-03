@@ -30,13 +30,13 @@ Edit supportedChains.ts within the packages/client to the Skale/Nebula network y
 ```javascript
 
 import { MUDChain, mudFoundry, redstone, garnet } from "@latticexyz/common/chains";
-import  {skaleNebula} from "viem/chains";
+import  {skaleNebulaTestnet} from "viem/chains";
 /*
  * See https://mud.dev/guides/hello-world/add-chain-client
  * for instructions on how to add networks.
  * skaleNebulaTestnet 
  */
-export const supportedChains: MUDChain[] = [mudFoundry, redstone, garnet, skaleNebula];
+export const supportedChains: MUDChain[] = [mudFoundry, redstone, garnet, skaleNebulaTestnet];
 ```
 
 You will also need to edit the foundy.toml file when editing the chain you wish to connect with any supplying the correct `eth_rpc_url`
@@ -69,8 +69,8 @@ fs_permissions = [{ access = "read", path = "./"}]
 [profile.garnet]
 eth_rpc_url = "https://rpc.garnetchain.com"
 
-[profile.skaleNebula]
-eth_rpc_url = "https://mainnet.skalenodes.com/v1/green-giddy-denebola"
+[profile.skaleNebulaTestnet]
+eth_rpc_url = "https://testnet.skalenodes.com/v1/lanky-ill-funny-testnet"
 
 [profile.redstone]
 eth_rpc_url = "https://rpc.redstonechain.com"
