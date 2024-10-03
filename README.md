@@ -81,7 +81,7 @@ eth_rpc_url = "https://rpc.redstonechain.com"
 Deploying smart contracts on the Skale network you must use the following command within the CLI within the contracts folder
 
 ```
- pnpm mud deploy --profile skaleNebula --forgeScriptOptions="--legacy"
+ pnpm mud deploy --profile skaleNebulaTestnet --forgeScriptOptions="--legacy"
 ```
 
 Now, from within the main MUD project directory. Run the following command.
